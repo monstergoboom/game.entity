@@ -1,0 +1,438 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		833146FC1969CF880076B59F /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 833146FB1969CF880076B59F /* libstdc++.dylib */; };
+		833146FE1969D1710076B59F /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 833146FD1969D1710076B59F /* libsqlite3.dylib */; };
+		833147071969D2A90076B59F /* GameEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = 833146FF1969D2A90076B59F /* GameEntity.h */; };
+		833147081969D2A90076B59F /* GameEntity.mm in Sources */ = {isa = PBXBuildFile; fileRef = 833147001969D2A90076B59F /* GameEntity.mm */; };
+		833147091969D2A90076B59F /* GameEntityContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 833147011969D2A90076B59F /* GameEntityContainer.h */; };
+		8331470A1969D2A90076B59F /* GameEntityContainer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 833147021969D2A90076B59F /* GameEntityContainer.mm */; };
+		8331470B1969D2A90076B59F /* GameEntityDataStructure.h in Headers */ = {isa = PBXBuildFile; fileRef = 833147031969D2A90076B59F /* GameEntityDataStructure.h */; };
+		8331470C1969D2A90076B59F /* GameEntityDataStructure.mm in Sources */ = {isa = PBXBuildFile; fileRef = 833147041969D2A90076B59F /* GameEntityDataStructure.mm */; };
+		8331470D1969D2A90076B59F /* GameEntityParameter.h in Headers */ = {isa = PBXBuildFile; fileRef = 833147051969D2A90076B59F /* GameEntityParameter.h */; };
+		8331470E1969D2A90076B59F /* GameEntityParameter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 833147061969D2A90076B59F /* GameEntityParameter.mm */; };
+		833147111969D4C80076B59F /* GameEntityDbTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 833147101969D4C80076B59F /* GameEntityDbTest.m */; };
+		833147131969D7FC0076B59F /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 833146FD1969D1710076B59F /* libsqlite3.dylib */; };
+		83314718196A32CA0076B59F /* EntityContainerProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 83314714196A32CA0076B59F /* EntityContainerProtocol.h */; };
+		83314719196A32CA0076B59F /* EntityProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 83314715196A32CA0076B59F /* EntityProtocol.h */; };
+		8331471A196A32CA0076B59F /* NSString+contains.h in Headers */ = {isa = PBXBuildFile; fileRef = 83314716196A32CA0076B59F /* NSString+contains.h */; };
+		8331471B196A32CA0076B59F /* NSString+contains.m in Sources */ = {isa = PBXBuildFile; fileRef = 83314717196A32CA0076B59F /* NSString+contains.m */; };
+		8333AD391968E29C009B4A1A /* libgame.entity.lib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8333AD2D1968E29C009B4A1A /* libgame.entity.lib.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8333AD3A1968E29C009B4A1A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8333AD251968E29C009B4A1A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8333AD2C1968E29C009B4A1A;
+			remoteInfo = game.entity;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		833146FB1969CF880076B59F /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
+		833146FD1969D1710076B59F /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		833146FF1969D2A90076B59F /* GameEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameEntity.h; sourceTree = "<group>"; };
+		833147001969D2A90076B59F /* GameEntity.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GameEntity.mm; sourceTree = "<group>"; };
+		833147011969D2A90076B59F /* GameEntityContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameEntityContainer.h; sourceTree = "<group>"; };
+		833147021969D2A90076B59F /* GameEntityContainer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GameEntityContainer.mm; sourceTree = "<group>"; };
+		833147031969D2A90076B59F /* GameEntityDataStructure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameEntityDataStructure.h; sourceTree = "<group>"; };
+		833147041969D2A90076B59F /* GameEntityDataStructure.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GameEntityDataStructure.mm; sourceTree = "<group>"; };
+		833147051969D2A90076B59F /* GameEntityParameter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameEntityParameter.h; sourceTree = "<group>"; };
+		833147061969D2A90076B59F /* GameEntityParameter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GameEntityParameter.mm; sourceTree = "<group>"; };
+		833147101969D4C80076B59F /* GameEntityDbTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameEntityDbTest.m; sourceTree = "<group>"; };
+		83314714196A32CA0076B59F /* EntityContainerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntityContainerProtocol.h; sourceTree = "<group>"; };
+		83314715196A32CA0076B59F /* EntityProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntityProtocol.h; sourceTree = "<group>"; };
+		83314716196A32CA0076B59F /* NSString+contains.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+contains.h"; sourceTree = "<group>"; };
+		83314717196A32CA0076B59F /* NSString+contains.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+contains.m"; sourceTree = "<group>"; };
+		8333AD2D1968E29C009B4A1A /* libgame.entity.lib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libgame.entity.lib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8333AD381968E29C009B4A1A /* game.entity.libTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = game.entity.libTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8333AD3E1968E29C009B4A1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8333AD2A1968E29C009B4A1A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				833146FE1969D1710076B59F /* libsqlite3.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8333AD351968E29C009B4A1A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				833147131969D7FC0076B59F /* libsqlite3.dylib in Frameworks */,
+				833146FC1969CF880076B59F /* libstdc++.dylib in Frameworks */,
+				8333AD391968E29C009B4A1A /* libgame.entity.lib.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8331470F1969D35D0076B59F /* data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = data;
+			sourceTree = "<group>";
+		};
+		8333AD241968E29C009B4A1A = {
+			isa = PBXGroup;
+			children = (
+				8331470F1969D35D0076B59F /* data */,
+				833146FD1969D1710076B59F /* libsqlite3.dylib */,
+				833146FB1969CF880076B59F /* libstdc++.dylib */,
+				8333AD2F1968E29C009B4A1A /* game.entity.lib */,
+				8333AD3C1968E29C009B4A1A /* game.entity.libTests */,
+				8333AD2E1968E29C009B4A1A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8333AD2E1968E29C009B4A1A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8333AD2D1968E29C009B4A1A /* libgame.entity.lib.a */,
+				8333AD381968E29C009B4A1A /* game.entity.libTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8333AD2F1968E29C009B4A1A /* game.entity.lib */ = {
+			isa = PBXGroup;
+			children = (
+				83314714196A32CA0076B59F /* EntityContainerProtocol.h */,
+				83314715196A32CA0076B59F /* EntityProtocol.h */,
+				83314716196A32CA0076B59F /* NSString+contains.h */,
+				83314717196A32CA0076B59F /* NSString+contains.m */,
+				833146FF1969D2A90076B59F /* GameEntity.h */,
+				833147001969D2A90076B59F /* GameEntity.mm */,
+				833147011969D2A90076B59F /* GameEntityContainer.h */,
+				833147021969D2A90076B59F /* GameEntityContainer.mm */,
+				833147031969D2A90076B59F /* GameEntityDataStructure.h */,
+				833147041969D2A90076B59F /* GameEntityDataStructure.mm */,
+				833147051969D2A90076B59F /* GameEntityParameter.h */,
+				833147061969D2A90076B59F /* GameEntityParameter.mm */,
+			);
+			name = game.entity.lib;
+			path = game.entity;
+			sourceTree = "<group>";
+		};
+		8333AD3C1968E29C009B4A1A /* game.entity.libTests */ = {
+			isa = PBXGroup;
+			children = (
+				8333AD3D1968E29C009B4A1A /* Supporting Files */,
+				833147101969D4C80076B59F /* GameEntityDbTest.m */,
+			);
+			name = game.entity.libTests;
+			path = game.entityTests;
+			sourceTree = "<group>";
+		};
+		8333AD3D1968E29C009B4A1A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8333AD3E1968E29C009B4A1A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8333AD2B1968E29C009B4A1A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83314718196A32CA0076B59F /* EntityContainerProtocol.h in Headers */,
+				8331470B1969D2A90076B59F /* GameEntityDataStructure.h in Headers */,
+				833147071969D2A90076B59F /* GameEntity.h in Headers */,
+				83314719196A32CA0076B59F /* EntityProtocol.h in Headers */,
+				833147091969D2A90076B59F /* GameEntityContainer.h in Headers */,
+				8331470D1969D2A90076B59F /* GameEntityParameter.h in Headers */,
+				8331471A196A32CA0076B59F /* NSString+contains.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8333AD2C1968E29C009B4A1A /* game.entity.lib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8333AD411968E29C009B4A1A /* Build configuration list for PBXNativeTarget "game.entity.lib" */;
+			buildPhases = (
+				8333AD291968E29C009B4A1A /* Sources */,
+				8333AD2A1968E29C009B4A1A /* Frameworks */,
+				8333AD2B1968E29C009B4A1A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = game.entity.lib;
+			productName = game.entity;
+			productReference = 8333AD2D1968E29C009B4A1A /* libgame.entity.lib.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		8333AD371968E29C009B4A1A /* game.entity.libTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8333AD441968E29C009B4A1A /* Build configuration list for PBXNativeTarget "game.entity.libTests" */;
+			buildPhases = (
+				8333AD341968E29C009B4A1A /* Sources */,
+				8333AD351968E29C009B4A1A /* Frameworks */,
+				8333AD361968E29C009B4A1A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8333AD3B1968E29C009B4A1A /* PBXTargetDependency */,
+			);
+			name = game.entity.libTests;
+			productName = game.entityTests;
+			productReference = 8333AD381968E29C009B4A1A /* game.entity.libTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8333AD251968E29C009B4A1A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Alek Mitrevski";
+				TargetAttributes = {
+					8333AD2C1968E29C009B4A1A = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					8333AD371968E29C009B4A1A = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 8333AD2C1968E29C009B4A1A;
+					};
+				};
+			};
+			buildConfigurationList = 8333AD281968E29C009B4A1A /* Build configuration list for PBXProject "game.entity.lib" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8333AD241968E29C009B4A1A;
+			productRefGroup = 8333AD2E1968E29C009B4A1A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8333AD2C1968E29C009B4A1A /* game.entity.lib */,
+				8333AD371968E29C009B4A1A /* game.entity.libTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8333AD361968E29C009B4A1A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8333AD291968E29C009B4A1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8331470A1969D2A90076B59F /* GameEntityContainer.mm in Sources */,
+				833147081969D2A90076B59F /* GameEntity.mm in Sources */,
+				8331470E1969D2A90076B59F /* GameEntityParameter.mm in Sources */,
+				8331471B196A32CA0076B59F /* NSString+contains.m in Sources */,
+				8331470C1969D2A90076B59F /* GameEntityDataStructure.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8333AD341968E29C009B4A1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				833147111969D4C80076B59F /* GameEntityDbTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8333AD3B1968E29C009B4A1A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8333AD2C1968E29C009B4A1A /* game.entity.lib */;
+			targetProxy = 8333AD3A1968E29C009B4A1A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		8333AD3F1968E29C009B4A1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				METAL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		8333AD401968E29C009B4A1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				METAL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		8333AD421968E29C009B4A1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = game.entity.lib;
+			};
+			name = Debug;
+		};
+		8333AD431968E29C009B4A1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = game.entity.lib;
+			};
+			name = Release;
+		};
+		8333AD451968E29C009B4A1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = game.entityTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				METAL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = game.entity.libTests;
+			};
+			name = Debug;
+		};
+		8333AD461968E29C009B4A1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = game.entityTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				METAL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = game.entity.libTests;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8333AD281968E29C009B4A1A /* Build configuration list for PBXProject "game.entity.lib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8333AD3F1968E29C009B4A1A /* Debug */,
+				8333AD401968E29C009B4A1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8333AD411968E29C009B4A1A /* Build configuration list for PBXNativeTarget "game.entity.lib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8333AD421968E29C009B4A1A /* Debug */,
+				8333AD431968E29C009B4A1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8333AD441968E29C009B4A1A /* Build configuration list for PBXNativeTarget "game.entity.libTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8333AD451968E29C009B4A1A /* Debug */,
+				8333AD461968E29C009B4A1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8333AD251968E29C009B4A1A /* Project object */;
+}
