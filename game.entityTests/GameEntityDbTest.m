@@ -35,7 +35,19 @@
     [dbContainer close];
 }
 
--(void) testCreateTableDefinition {
+-(void) testDatabaseCRUD {
+    [self createTableDefinition];
+    
+    [self addGameObject];
+    
+    [self updateGameObject];
+    
+    [self deleteGameObject];
+    
+    [self dropTableDefinition];
+}
+
+-(void) createTableDefinition {
     GameEntityContainer* dbContainer = [[GameEntityContainer alloc] initWithName:@"game.entity"];
     [dbContainer open: true];
 
@@ -69,7 +81,7 @@
     [dbContainer close];
 }
 
--(void) testAddData {
+-(void) addGameObject {
     GameEntityContainer* dbContainer = [[GameEntityContainer alloc] initWithName:@"game.entity"];
     [dbContainer open: true];
     
@@ -80,36 +92,40 @@
     [entity setText:@"sword of truth" atColumnName:@"description"];
     
     bool result = [entity save];
+    
     XCTAssert(result == true, @"unable to save entity record");
     
     [dbContainer close];
 }
 
--(void) testUpdateData {
+-(void) updateGameObject {
     GameEntityContainer* dbContainer = [[GameEntityContainer alloc] initWithName:@"game.entity"];
     [dbContainer open: true];
     
     GameEntity* entity = [[GameEntity alloc] init:dbContainer withEntityReferenceName:@"game_object" andEntity:1];
     
     [entity setText:@"sword of justice" atColumnName:@"description"];
+    
     bool result = [entity save];
+    
     XCTAssert(result == true, @"unable to save entity record");
     
     [dbContainer close];
 }
 
--(void) testRemoveData {
+-(void) deleteGameObject {
     GameEntityContainer* dbContainer = [[GameEntityContainer alloc] initWithName:@"game.entity"];
     [dbContainer open: true];
     
     GameEntity* entity = [[GameEntity alloc] init:dbContainer withEntityReferenceName:@"game_object" andEntity:1];
     
     [entity remove];
+    [entity save];
     
     [dbContainer close];
 }
 
--(void) testDropTableDefinition {
+-(void) dropTableDefinition {
     GameEntityContainer* dbContainer = [[GameEntityContainer alloc] initWithName:@"game.entity"];
     [dbContainer open: true];
     
@@ -122,4 +138,5 @@
     
     [dbContainer close];
 }
+
 @end

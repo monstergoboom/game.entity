@@ -206,7 +206,7 @@
 		8333AD251968E29C009B4A1A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0600;
+				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "Alek Mitrevski";
 				TargetAttributes = {
 					8333AD2C1968E29C009B4A1A = {
@@ -355,6 +355,7 @@
 		8333AD421968E29C009B4A1A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				EXECUTABLE_PREFIX = lib;
 				PRODUCT_NAME = game.entity.lib;
 			};
@@ -363,6 +364,7 @@
 		8333AD431968E29C009B4A1A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				EXECUTABLE_PREFIX = lib;
 				PRODUCT_NAME = game.entity.lib;
 			};
